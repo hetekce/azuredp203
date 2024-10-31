@@ -26,6 +26,9 @@ terraform apply -var="db_pass=$DB_PASS_ENV_VAR" # Passing Variables via CLI(don'
 
 # To print out the specific output variables
 terraform output output_name 
+
+# To destroy all created resources
+terraform destroy
 ```
 
 Since we should not push the secrets in git, i put `.tfvars` in `.gitignore`. They consists of these variables below. You can assign your credentials to the variables.

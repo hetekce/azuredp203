@@ -16,9 +16,12 @@ az ad sp create-for-rbac --scopes /subscriptions/$subscription_id
 # To list all the service principles
 az ad app list -o table
 
-# Assign role to the service principle
+# Service principle single role assignnment in the resource group level
 az role assignment create --assignee {appId} --scope /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName} --role "{roleName}"
 az role assignment create --assignee {appId} --scope /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName} --role "Storage Blob Data Contributor"
+
+# Service principle contributor role assignnment in the subscription level
+az role assignment create --assignee {appId} --role Contributor --scope /subscriptions/{subscriptionId}
 
 # To create a storage account
 az storage account create --name uniquestorageaccount --resource-group rg-FirstApp --location germanywestcentral --kind StorageV2
