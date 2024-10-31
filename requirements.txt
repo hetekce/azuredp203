@@ -1,0 +1,4 @@
+azure-storage-blob
+azure-identity
+azure-storage-blob[aio]
+python-dotenv==1.0.1

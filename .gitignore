@@ -32,6 +32,40 @@ MANIFEST
 *.manifest
 *.spec
 
+
+# Local Terraform directories
+.terraform/
+.terraform.lock.hcl
+
+# Ignore Terraform state files (can contain sensitive data)
+*.tfstate
+*.tfstate.*
+
+# Ignore crash logs
+crash.log
+
+# Ignore plan output files
+*.tfplan
+
+# Ignore .tfvars files that may contain sensitive information
+*.tfvars
+*.auto.tfvars
+
+# Ignore override files (for local, non-committed changes)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore any generated files
+.terraform.tfstate.backup
+terraform.tfstate.backup
+
+# Ignore module directories if modules are managed locally
+**/modules/*/
+
+*.env
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
