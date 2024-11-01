@@ -182,3 +182,11 @@ Integration runtime is the `compute infrastructure` used by ADF to provide vario
 `3. Azure-SQL Server Integration Services(SSIS) IR:` It is fully managed cluster of Azure VMs or nodes dedicated to run your SSIS packages.
 
 [Find](https://learn.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime) more about Integration runtime in Azure Data Factory.
+
+[Find](https://learn.microsoft.com/en-us/azure/data-factory/connector-overview?wt.mc_id=datainteg_addtlresconnect_webpage_extlp) more about the connectors.
+
+## 3.6. Transforming data with the Mapping Data Flow
+
+You can natively perform data transformations with Azure Data Factory code free using the Mapping Data Flow task. Mapping Data Flows provide a fully visual experience with no coding required. Your data flows will run on your own execution cluster for scaled-out data processing.
+
+[Find](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-transformation-overview) about all data flow transformation overview.
