@@ -2,3 +2,6 @@ azure-storage-blob
 azure-identity
 azure-storage-blob[aio]
 python-dotenv==1.0.1
+azure-mgmt-datafactory
+azure-mgmt-resource
+msrestazure
