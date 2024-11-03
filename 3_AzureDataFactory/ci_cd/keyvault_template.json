@@ -1,0 +1,12 @@
+{
+    "parameters": {
+        "azureSqlReportingDbPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/<subId>/resourceGroups/<resourcegroupId> /providers/Microsoft.KeyVault/vaults/<vault-name> "
+                },
+                "secretName": " < secret - name > "
+            }
+        }
+    }
+}

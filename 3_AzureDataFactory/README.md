@@ -190,3 +190,42 @@ Integration runtime is the `compute infrastructure` used by ADF to provide vario
 You can natively perform data transformations with Azure Data Factory code free using the Mapping Data Flow task. Mapping Data Flows provide a fully visual experience with no coding required. Your data flows will run on your own execution cluster for scaled-out data processing.
 
 [Find](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-transformation-overview) about all data flow transformation overview.
+
+[Find](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-join?wt.mc_id=datainteg_addltlresdataflowjoin_webpage_extlp) about joins.
+
+[See](https://learn.microsoft.com/en-us/training/modules/code-free-transformation-scale/4-author-azure-data-factory-mapping-data-flow) the example.
+
+## 3.7. Slowly Changing Dimensions
+
+Slowly changing dimensions (SCD) are tables in a dimensional model that handle changes to dimension values over time. Learning the best practices to design and load slowly changing dimensions will help you successfully handle changes in your data.
+
+[Find](https://learn.microsoft.com/en-us/training/modules/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/3-choose-between-dimension-types) more about the types of the slowly changing dimensions.
+
+[Find](https://learn.microsoft.com/en-us/training/modules/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/4-exercise-design-implement-type-1-dimension) more about slowly changing dimensions(SCD).
+
+
+## 3.8. Continuos integration and deployment (CI/CD)
+
+In Azure Data Factory, CI/CD means moving Data Factory pipelines from one environment (development, test, production) to another. ADF utilizes `Azure Resource Manager` templates to store the configuration of your various ADF entities (pipelines, datasets, data flows, and so on).
+
+`Note:` Only the development factory is associated with a git repository. The test and production factories shouldn't have a git repository associated with them and should only be updated via an Azure DevOps pipeline or via a Resource Management template.
+
+[Find](https://learn.microsoft.com/en-us/training/modules/operationalize-azure-data-factory-pipelines/4-continuous-integration-deployment) more about the ci/cd integration of ADF.
+
+## 3.9. Monitor ADF pipelines and set up alerts
+
+Once you've created and published a pipeline in Azure Data Factory, you can associate it with a trigger or manually kick off an on-demand run. You can monitor all of your pipeline runs natively in the Azure Data Factory user experience.
+
+[Find](https://learn.microsoft.com/en-us/training/modules/operationalize-azure-data-factory-pipelines/5-monitor) more about monitoring.
+
+In Azure Data Factory, you can raise alerts based upon metrics outputted by the monitoring service. Alerts allow you to get alerted for a variety of scenarios such as, but not limited to, failed pipelines, large factory sizes, and integration runtime CPU utilization.
+
+[Find](https://learn.microsoft.com/en-us/training/modules/operationalize-azure-data-factory-pipelines/6-set-up-alerts) more about setting up alerts.
+
+## 3.10. Azure Data Share
+
+To share data securely with customers or other departments you can make use of Azure Data Share.
+
+[Find](https://learn.microsoft.com/en-us/training/modules/introduction-azure-data-share/4-exercise-provision) more about how to provision.
+
+[See](https://www.youtube.com/watch?v=fbN8pqeFtBM) the video.
