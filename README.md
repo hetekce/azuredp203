@@ -15,8 +15,14 @@ python.exe -m pip install --upgrade pip
 pip install -r .\requirements.txt
 ```
 
-## [1. Microsoft Azure for Data Engineering](1_AzureDataEngineering/README.md)
 
-## [2. Data Storage in Microsoft Azure](2_DataStorage/README.md)
 
-## [3. Azure Data Factory](3_AzureDataFactory/README.md)
+### [1. Microsoft Azure for Data Engineering](1_AzureDataEngineering/README.md)
+
+### [2. Data Storage in Microsoft Azure](2_DataStorage/README.md)
+
+### [3. Azure Data Factory](3_AzureDataFactory/README.md)
+
+### [4. Azure Synapse Analytics](4_IntoSynapseAnalytics/README.md)
+
+You can [see](https://microsoftlearning.github.io/dp-203-azure-data-engineer/) additional exercises about synapse analytics.
