@@ -1,3 +1,10 @@
+# Variables for Main Account
+variable "account_object_id" {
+  description = "Main account object id"
+  type      = string
+  sensitive = true  # Hides the value in output and state file display
+}
+
 # Variables for Service Principle
 variable "client_id" {
   description = "Service principle app id"

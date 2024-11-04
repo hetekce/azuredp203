@@ -63,11 +63,40 @@ resource "azurerm_synapse_workspace" "asa1" {
   }
 }
 
-# 4. Azure Synapse Analytics(ASA) SQL Pool
-resource "azurerm_synapse_sql_pool" "asa1" {
-  name                      = var.asa_sql_pool_name
-  storage_account_type      = azurerm_storage_account.asa1.account_replication_type
-  sku_name                  = "DW100c"
-  synapse_workspace_id      = azurerm_synapse_workspace.asa1.id  
-  geo_backup_policy_enabled = false # must set to false if storage account type is LRS
+# Adding firewall rule to ASA
+resource "azurerm_synapse_firewall_rule" "asa1" {
+  name                 = "AllowAll"
+  synapse_workspace_id = azurerm_synapse_workspace.asa1.id
+  start_ip_address     = "0.0.0.0"
+  end_ip_address       = "255.255.255.255"
+}
+
+# # Role assignments for access roles to Storage Account  (admin account needed)
+# resource "azurerm_role_assignment" "role1" {
+#   scope                = azurerm_storage_account.asa1.id
+#   role_definition_name = "Storage Blob Data Contributor"
+#   principal_id         = azurerm_synapse_workspace.asa1.identity[0].principal_id
+# }
+
+# resource "azurerm_role_assignment" "role2" {
+#   scope                = azurerm_storage_account.asa1.id
+#   role_definition_name = "Storage Blob Data Contributor"
+#   principal_id         = var.account_object_id
+# }
+
+# 4. Azure Synapse Analytics(ASA) SQL Pool, 1,57 USD/Hour
+# resource "azurerm_synapse_sql_pool" "asa1" {
+#   name                      = var.asa_sql_pool_name
+#   storage_account_type      = azurerm_storage_account.asa1.account_replication_type
+#   sku_name                  = "DW100c"
+#   synapse_workspace_id      = azurerm_synapse_workspace.asa1.id  
+#   geo_backup_policy_enabled = false # must set to false if storage account type is LRS
+# }
+
+resource "azurerm_synapse_role_assignment" "asa1" {
+  synapse_workspace_id = azurerm_synapse_workspace.asa1.id
+  role_name            = "Synapse Administrator"
+  principal_id         = var.account_object_id
+
+  depends_on = [azurerm_synapse_firewall_rule.asa1]
 }
