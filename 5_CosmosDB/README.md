@@ -115,3 +115,4 @@ Avoid embedding if:
 - You need to frequently query or update the embedded data on its own.
 
 Embedded entities are a powerful modeling technique in Cosmos DB, enabling efficient data retrieval and simpler application logic when used for tightly coupled data.
+
