@@ -62,8 +62,11 @@ Since databricks provides robust high performing cluster management solution, we
 * **&percnt;run** -> You can run a notebook from another notebook. All variables & functions defined in that other notebook will become available in your current notebook.
 * **&percnt;fs** -> Runs the cell as Databricks File System(DBFS).
 
-# 6.3. Databricks Utilities - dbutils
+## 6.3. Databricks Utilities - dbutils
 
 * You can access the DBFS through the Databricks Utilities class (and other file IO routines).
 * An instance of DBUtils is already declared for us as `dbutils`.
 * For in-notebook documentation on DBUtils you can execute the command `dbutils.help()`.
+
+## 6.4. Performance Enhancements in Apache Spark
+
