@@ -70,3 +70,4 @@ Since databricks provides robust high performing cluster management solution, we
 
 ## 6.4. Performance Enhancements in Apache Spark
 
+* What is Tungsten binary format ?
