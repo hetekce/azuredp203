@@ -23,6 +23,10 @@ pip install -r .\requirements.txt
 
 ### [3. Azure Data Factory](3_AzureDataFactory/README.md)
 
-### [4. Azure Synapse Analytics](4_IntoSynapseAnalytics/README.md)
+### [4. Azure Synapse Analytics](4_SynapseAnalytics/README.md)
+
+### [5. Azure CosmosDB](5_CosmosDB/README.md)
+
+### [6. Azure Databricks](6_AzureDatabricks/README.md)
 
 You can [see](https://microsoftlearning.github.io/dp-203-azure-data-engineer/) additional exercises about synapse analytics.
