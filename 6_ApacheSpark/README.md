@@ -1,4 +1,4 @@
-# 6. Azure Databricks
+# 6. Understanding Apache Spark
 
 Azure Databricks is a cloud-based analytics platform on Azure, optimized for big data and machine learning. It runs on Apache Spark and allows data teams to collaborate in a unified workspace, supporting multiple languages like Python, SQL, and Scala. It integrates seamlessly with Azure services, providing scalability, security, and support for ETL, machine learning, and real-time analytics.
 
@@ -40,7 +40,7 @@ In short: *The driver sends the workload to executors, and tasks are executed in
 
 The architecture of a spark job looks like:
 
-![Architecture](pictures/2.png)
+![Architecture](pictures/1.png)
 
 Since databricks provides robust high performing cluster management solution, we don't need to concern with the cluster management. From a developer perspective, our primiraly focus should be on the following issues:
 
@@ -49,26 +49,7 @@ Since databricks provides robust high performing cluster management solution, we
 3. Number of jobs triggered
 4. Number of stages the jobs divided into
 
-## 6.2. Magic Commands
-
-* Magic Commands are specific to the Databricks notebooks
-* A single percent (%) symbol at the start of a cell identifies a Magic Commands
-
-* **&percnt;python** -> Runs the cell with python
-* **&percnt;scala** -> Runs the cell with scala
-* **&percnt;sql** -> Runs the cell with sql
-* **&percnt;r** -> Runs the cell with R
-* **&percnt;sh** -> Runs the cell as a linux shell
-* **&percnt;run** -> You can run a notebook from another notebook. All variables & functions defined in that other notebook will become available in your current notebook.
-* **&percnt;fs** -> Runs the cell as Databricks File System(DBFS).
-
-## 6.3. Databricks Utilities - dbutils
-
-* You can access the DBFS through the Databricks Utilities class (and other file IO routines).
-* An instance of DBUtils is already declared for us as `dbutils`.
-* For in-notebook documentation on DBUtils you can execute the command `dbutils.help()`.
-
-## 6.4. Performance Enhancements in Apache Spark
+## 6.2. Performance Enhancements in Apache Spark
 
 Shuffle operations and the Tungsten engine in Apache Spark both play crucial roles in enhancing performance, particularly when working with large-scale data. Let’s break down how each contributes to performance improvements with an example:
 
