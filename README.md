@@ -27,6 +27,8 @@ pip install -r .\requirements.txt
 
 ### [5. Azure CosmosDB](5_CosmosDB/README.md)
 
-### [6. Azure Databricks](6_AzureDatabricks/README.md)
+### [6. Understanding Apache Spark](6_ApacheSpark/README.md)
+
+### [7. Azure Databricks & Azure Key Vault](7_AzureDataBricks_KeyVault/README.md)
 
 You can [see](https://microsoftlearning.github.io/dp-203-azure-data-engineer/) additional exercises about synapse analytics.
