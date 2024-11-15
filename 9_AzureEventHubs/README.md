@@ -72,5 +72,13 @@ az storage account show-connection-string -n $STORAGE_NAME
 az storage container create --name messages --connection-string "<connection string here>"
 ```
 
-## 3. Clone the Event Hubs GitHub Repository
+## 3. Create Producer and Consumer
+
+Then we are good to create producer and consumer.
+
 [View](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/eventhub/azure-eventhub/samples) the sample app how to send with azure event hubs.
+
+[Create](producer.py) producer to create events.
+
+[Create](consumer.py) consumer to subscribe events.
+
