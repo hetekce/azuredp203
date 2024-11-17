@@ -31,4 +31,6 @@ pip install -r .\requirements.txt
 
 ### [7. Azure Databricks & Azure Key Vault](7_AzureDataBricks_KeyVault/README.md)
 
+### [8. Azure Stream Analytics](8_AzureStreamAnalytics/README.md)
+
 You can [see](https://microsoftlearning.github.io/dp-203-azure-data-engineer/) additional exercises about synapse analytics.
