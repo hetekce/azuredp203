@@ -33,4 +33,6 @@ pip install -r .\requirements.txt
 
 ### [8. Azure Stream Analytics](8_AzureStreamAnalytics/README.md)
 
+### [9. Azure Event Hubs](9_AzureEventHubs/README.md)
+
 You can [see](https://microsoftlearning.github.io/dp-203-azure-data-engineer/) additional exercises about synapse analytics.
