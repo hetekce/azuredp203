@@ -1,4 +1,4 @@
-# Azure Event Hubs
+# 9. Azure Event Hubs
 
 ## 1. Configuring Event Hubs Namespace and Event Hub
 
