@@ -1,6 +1,6 @@
-# Azure Databricks
+# 7. Azure Databricks
 
-## 6.1. Magic Commands
+## 7.1. Magic Commands
 
 * Magic Commands are specific to the Databricks notebooks
 * A single percent (%) symbol at the start of a cell identifies a Magic Commands
@@ -13,13 +13,13 @@
 * **&percnt;run** -> You can run a notebook from another notebook. All variables & functions defined in that other notebook will become available in your current notebook.
 * **&percnt;fs** -> Runs the cell as Databricks File System(DBFS).
 
-## 6.2. Databricks Utilities - dbutils
+## 7.2. Databricks Utilities - dbutils
 
 * You can access the DBFS through the Databricks Utilities class (and other file IO routines).
 * An instance of DBUtils is already declared for us as `dbutils`.
 * For in-notebook documentation on DBUtils you can execute the command `dbutils.help()`.
 
-## 6.3. Azure Databricks Secrets UI
+## 7.3. Azure Databricks Secrets UI
 
 Now that you have an instance of Azure Key Vault up and running, it is time to let Azure Databricks know how to connect to it.
 
