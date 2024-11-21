@@ -1,6 +1,6 @@
 # 9. Azure Event Hubs
 
-## 1. Configuring Event Hubs Namespace and Event Hub
+## 9. 1. Configuring Event Hubs Namespace and Event Hub
 
 [Activate](https://learn.microsoft.com/en-us/training/modules/enable-reliable-messaging-for-big-data-apps-using-event-hubs/3-exercise-create-an-event-hub-using-azure-cli) the sandbox through microsoft learn hub.
 
